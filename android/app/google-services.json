@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "581084413296",
+    "firebase_url": "https://akillireklam-a7407.firebaseio.com",
+    "project_id": "akillireklam-a7407",
+    "storage_bucket": "akillireklam-a7407.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581084413296:android:65613416f44968a9",
+        "android_client_info": {
+          "package_name": "com.example.dell.akillireklam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581084413296-ct0l1fb2f2cagiqv140bmmq4srlg8v83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.akillireklam",
+            "certificate_hash": "2b1603d58ef2962949253bbc7151ea003f54bc3d"
+          }
+        },
+        {
+          "client_id": "581084413296-f4bqpjol9jaij2578t5s1mfr6r25iju9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN0JTVuWhvGXUf6jkLSCYcYn95fWEzxqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581084413296-f4bqpjol9jaij2578t5s1mfr6r25iju9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581084413296:android:ecde238323114287a0a3b5",
+        "android_client_info": {
+          "package_name": "com.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581084413296-f4bqpjol9jaij2578t5s1mfr6r25iju9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN0JTVuWhvGXUf6jkLSCYcYn95fWEzxqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581084413296-f4bqpjol9jaij2578t5s1mfr6r25iju9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581084413296:android:467f223a00e8a23aa0a3b5",
+        "android_client_info": {
+          "package_name": "com.rnpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581084413296-f4bqpjol9jaij2578t5s1mfr6r25iju9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN0JTVuWhvGXUf6jkLSCYcYn95fWEzxqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581084413296-f4bqpjol9jaij2578t5s1mfr6r25iju9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
