@@ -101,7 +101,7 @@ export default class SignUp extends React.Component {
                 <TouchableOpacity
                     style={{ paddingTop: 15 }}
                     onPress={() => this.props.navigation.navigate('SignIn')}>
-                    <Text style={{ color: "lightblue", fontSize: 18, fontWeight: '500' }}> Zaten bir hesabın var mı? </Text>
+                    <Text style={{ color: '#7FACFA', fontSize: 18, fontWeight: '500' }}> Zaten bir hesabın var mı? </Text>
                 </TouchableOpacity>
             </View>
         )
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     input: {
         width: wp('84.5%'),
         height: hp('7%'),
-        backgroundColor: '#42A5F5',
+        backgroundColor: '#7FACFA',//'#42A5F5',
         margin: 10,
         padding: 8,
         color: 'white',
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
         width: wp('35%'),
         height: hp('7%'),
         alignItems: 'center',
-        backgroundColor: '#42A5F5',
+        backgroundColor: '#7FACFA',//'#42A5F5',
         //borderWidth: 2,
         borderColor: 'black',
         borderRadius: 14,

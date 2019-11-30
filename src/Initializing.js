@@ -2,16 +2,15 @@
 
 import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity } from 'react-native';
-import firebase from 'react-native-firebase';
 
 export default class initializing extends React.Component {
 
     onPressSignin = () => {
-        this.props.navigation.navigate('SignIn')
+        this.props.navigation.navigate('Login')
     }
 
     onPressSignout = () => {
-        this.props.navigation.navigate('SignUp')
+        this.props.navigation.navigate('Register')
     }
 
     render() {
@@ -23,10 +22,10 @@ export default class initializing extends React.Component {
                         onPress={this.onPressSignin}
                     >
                         <Image
-                            source={require('../assets/sign-in.png')}
+                            source={require('../assets/login.png')}
                             style={styles.ImageIconStyle}
                         />
-                        <Text style={styles.buttonText}>  Sign in </Text>
+                        <Text style={styles.buttonText}> Login </Text>
                     </TouchableOpacity>
                 </View>
                 <View>
@@ -36,10 +35,10 @@ export default class initializing extends React.Component {
                     >
 
                         <Image
-                            source={require('../assets/sign-out.png')}
+                            source={require('../assets/register.png')}
                             style={styles.ImageIconStyle}
                         />
-                        <Text style={styles.buttonText}>  Sign up </Text>
+                        <Text style={styles.buttonText}> Register </Text>
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>
@@ -50,23 +49,28 @@ export default class initializing extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection: 'row',
         backgroundColor: '#fff',
-        //alignItems: 'center',
+        alignItems: 'center',
         justifyContent: 'center',
     },
     button: {
-        alignItems: 'center',
+        //alignItems: 'flex-start',
         //backgroundColor: 'lightblue',
-        padding: 10
+        padding: 40
     },
     buttonText: {
-        color: 'lightblue'
+        color: 'lightblue',
+        fontSize: 25,
+        top: 20,
+        //fontStyle: 'italic'
+        fontFamily: 'Comfortaa-VariableFont_wght'
     },
     ImageIconStyle: {
         padding: 10,
         margin: 5,
-        height: 50,
-        width: 50,
+        height: 100,
+        width: 100,
         resizeMode: 'stretch',
     },
 });

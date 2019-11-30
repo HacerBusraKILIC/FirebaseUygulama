@@ -3,8 +3,8 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import Initializing from './Initializing';
-import SignIn from './SignIn';
-import SignUp from './SignUp';
+import Login from './Login';
+import Register from './Register';
 import SplashScreen from './SplashScreen';
 import Home from './Home';
 import Screen2 from './Screen2';
@@ -24,22 +24,22 @@ const MainNavigator = createStackNavigator({
     }
   },
 
-  SignIn: {
-    screen: SignIn,
+  Login: {
+    screen: Login,
     navigationOptions: {
-      headerTitle: 'Sign In'
+      headerTitle: 'Login'
     }
   },
 
-  SignUp: {
-    screen: SignUp,
+  Register: {
+    screen: Register,
     navigationOptions: {
-      headerTitle: 'Sign Up'
+      headerTitle: 'Register'
     }
   },
 
   Home: { screen: Home },
-  Screen2: {screen: Screen2 },
+  Screen2: { screen: Screen2 },
 });
 
 const AppNavigator = createAppContainer(MainNavigator);
