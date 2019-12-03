@@ -157,7 +157,7 @@ export default class SignIn extends React.Component {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={this.signIn}>
-                    <Text style={styles.buttonText}> Sign In </Text>
+                    <Text style={styles.buttonText}> Login </Text>
                 </TouchableOpacity>
 
                 <View style={{ flexDirection: 'row', marginTop: 15 }}>
@@ -173,7 +173,7 @@ export default class SignIn extends React.Component {
 
                 <TouchableOpacity
                     style={{ paddingTop: 15 }}
-                    onPress={() => this.props.navigation.navigate('SignUp')}>
+                    onPress={() => this.props.navigation.navigate('Register')}>
                     <Text style={{ color: '#7FACFA', fontSize: 18, fontWeight: '500' }}> Henüz hesabın yok mu? </Text>
                 </TouchableOpacity>
             </View>

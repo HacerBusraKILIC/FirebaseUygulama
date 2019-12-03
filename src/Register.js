@@ -96,11 +96,11 @@ export default class SignUp extends React.Component {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={this.signUp}>
-                    <Text style={styles.buttonText}> Sign Up </Text>
+                    <Text style={styles.buttonText}> Register </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={{ paddingTop: 15 }}
-                    onPress={() => this.props.navigation.navigate('SignIn')}>
+                    onPress={() => this.props.navigation.navigate('Login')}>
                     <Text style={{ color: '#7FACFA', fontSize: 18, fontWeight: '500' }}> Zaten bir hesabın var mı? </Text>
                 </TouchableOpacity>
             </View>
