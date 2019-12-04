@@ -18,7 +18,6 @@ import {
     removeOrientationListener as rol
 } from 'react-native-responsive-screen';
 
-import { USER_KEY } from './config';
 import firebase from 'react-native-firebase';
 
 export default class SignIn extends React.Component {

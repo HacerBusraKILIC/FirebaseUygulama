@@ -6,35 +6,16 @@ import {
     AsyncStorage
 } from 'react-native'
 
-import firebase from 'react-native-firebase'
-
-
 export default class SplashScreen extends React.Component {
-
-    componentDidMount() {
-        firebase.auth().onAuthStateChanged(user => {
-          this.props.navigation.navigate(user ? 'Home' : 'Initializing')
-        })
-    }
     
-    /*async componentDidMount() {
+    async componentDidMount() {
         try {
-            const user = await AsyncStorage.getItem(USER_KEY)
-            console.log('user: ', user)
+            const user = await AsyncStorage.getItem('USER-EMAIL')
 
             if (user) {
-                console.log('user')
                 this.props.navigation.navigate('Home');
-                /*const navigateAction = NavigationActions.navigate({
-                    routeName: 'Home',
-                    params: {},
-                    // navigate can have a nested navigate action that will be run inside the child router
-                    action: NavigationActions.navigate({ routeName: 'Home' }),
-                });
-                this.props.navigation.dispatch(navigateAction);*/
                 
-            /*} else {
-                console.log('else')
+            } else {
                 this.props.navigation.navigate('Initializing');
             }
 
@@ -42,7 +23,7 @@ export default class SplashScreen extends React.Component {
             console.log('error: ', err)
             this.props.navigation.navigate('Initializing');
         }
-    }*/
+    }
 
     render() {
         return (

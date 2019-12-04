@@ -38,7 +38,13 @@ const MainNavigator = createStackNavigator({
     }
   },
 
-  Home: { screen: Home },
+  Home: { 
+    screen: Home,
+    navigationOptions: {
+      header: null
+    }
+  },
+  
   Screen2: { screen: Screen2 },
 });
 

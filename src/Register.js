@@ -39,9 +39,6 @@ export default class SignUp extends React.Component {
      }
 
     onSignupSuccess() {
-        /*this.setState({
-            username: '', password: '', email: '', phone_number: ''
-        })*/
         this.showToast()
         this.props.navigation.navigate('Home')
     }
@@ -52,13 +49,7 @@ export default class SignUp extends React.Component {
             .auth()
             .createUserWithEmailAndPassword(this.state.email, this.state.password)
             .then(this.onSignupSuccess.bind(this))
-            .catch(error => console.log(error)); //.catch(error => this.setState({ errorMessage: error.message }))
-        /*try {
-            // here place your signup logic
-            console.log('user successfully signed up!: ', success)
-        } catch (err) {
-            console.log('error signing up: ', err)
-        }*/
+            .catch(error => console.log(error)); 
     }
 
     render() {
