@@ -7,6 +7,10 @@ import Login from './Login';
 import Register from './Register';
 import SplashScreen from './SplashScreen';
 import Home from './Home';
+import NewsHeadlines from './NewsHeadlines';
+import NewsCategory from './NewsCategory';
+import NewsDetail from './NewsDetail';
+import NewsWebView from './NewsWebView';
 import Screen2 from './Screen2';
 
 const MainNavigator = createStackNavigator({
@@ -45,6 +49,25 @@ const MainNavigator = createStackNavigator({
     }
   },
   
+  NewsHeadlines: {
+    screen: NewsHeadlines,
+    navigationOptions: {
+      headerTitle: `Dünya'dan Haberler`
+    }
+  },
+
+  NewsCategory: {
+    screen: NewsCategory
+  },
+
+  NewsDetail: {
+    screen: NewsDetail
+  },
+
+  NewsWebView: {
+    screen: NewsWebView
+  },
+
   Screen2: { screen: Screen2 },
 });
 

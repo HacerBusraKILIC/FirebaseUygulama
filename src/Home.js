@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import firebase from 'react-native-firebase'
 
-import Headlines from './NewsHeadlines'
+import NewsCategory from './NewsCategory'
 
 export default class Home extends React.Component {
   logout = async () => {
@@ -19,7 +19,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <SafeAreaView>
-        <Headlines />
+        <NewsCategory />
       </SafeAreaView>
     )
   }
