@@ -23,7 +23,7 @@ const NewsDetail = ({ navigation }) => {
 
       <ImageBackground style={styles.ImageStyle} source={{ uri: urlToImage }}>
         <Image source={require('../assets/darkgradient.png')} style={styles.gradientImage} />
-        <Text numberOfLines={2} style={[styles.baseText, styles.listRow_text]}>{title}></Text>
+        <Text numberOfLines={2} style={[styles.baseText, styles.listRow_text]}>{title}</Text>
       </ImageBackground>
 
       <View style={styles.CategoryDateView}>
@@ -83,10 +83,10 @@ const styles = StyleSheet.create({
     left: wp('5%'),
     backgroundColor: 'transparent',
     maxWidth: wp('75%'),
-    height: wp('7%'),
+    height: wp('13%'),
     position: 'absolute',
     bottom: hp('3%'),
-    color: "#fff",
+    color: '#fff',
   },
   subTitleText: {
     fontSize: wp('3.5%'),

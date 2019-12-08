@@ -43,7 +43,7 @@ export default class SignIn extends React.Component {
     onSigninSuccess() {
         console.log(this.email)
         this.showToast()
-        this.props.navigation.navigate('Main')
+        this.props.navigation.navigate('NewsCategory')
     }
 
     onSigninFailure(errorMessage) {
