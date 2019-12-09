@@ -1,7 +1,7 @@
 # FirebaseUygulama
 React-native ile firebase kullanılarak kullanıcı girişi sağlanmıştır. NewsApı'den alınan verilerle kullanıcıya haberler sunulmuştur.
 
-![Kategori](https://user-images.githubusercontent.com/26281251/70373828-018c8400-18fd-11ea-9bd4-a9fd84a90158.PNG)
+![resim](https://user-images.githubusercontent.com/26281251/70472878-f5611c00-1ae0-11ea-978a-19f81b1eaa8d.png)
 
 ![Haberler](https://user-images.githubusercontent.com/26281251/70373835-149f5400-18fd-11ea-9ea2-2caa0b497bb1.PNG)
 
