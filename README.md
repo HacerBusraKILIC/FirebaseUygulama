@@ -5,6 +5,6 @@ React-native ile firebase kullanılarak kullanıcı girişi sağlanmıştır. Ne
 
 ![Haberler](https://user-images.githubusercontent.com/26281251/70373835-149f5400-18fd-11ea-9ea2-2caa0b497bb1.PNG)
 
-![HaberDetay](https://user-images.githubusercontent.com/26281251/70373840-1f59e900-18fd-11ea-948f-baa114c2d0e2.PNG)
+![resim](https://user-images.githubusercontent.com/26281251/70473062-54bf2c00-1ae1-11ea-9bf4-0019bde8022d.png)
 
 ![HaberWeb](https://user-images.githubusercontent.com/26281251/70373841-2123ac80-18fd-11ea-88bf-d4bdf74fad28.PNG)
