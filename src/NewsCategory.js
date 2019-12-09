@@ -1,10 +1,15 @@
 import React from 'react';
-import { Text, FlatList, ImageBackground, Dimensions, TouchableHighlight, Platform, StatusBar } from 'react-native';
-import NewsHeadlines from './NewsHeadlines';
+import { StyleSheet, Text, View, FlatList, ImageBackground, Dimensions, TouchableHighlight, Platform, StatusBar } from 'react-native';
 import { withNavigation } from 'react-navigation';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+  listenOrientationChange as loc,
+  removeOrientationListener as rol
+} from 'react-native-responsive-screen';
 
 const NewsCategory = ({ navigation }) => {
-  const numColumns = 3;
+  const numColumns = 2;
   const tileWidth = Dimensions.get('window').width / numColumns;
   const imageBaseUrl = "https://images.unsplash.com/photo-";
   const imageParameters = "?auto=format&fit=crop&w=375&q=80";
@@ -25,21 +30,18 @@ const NewsCategory = ({ navigation }) => {
     { category: 'Video', imageId: '1524253482453-3fed8d2fe12b' },
   ];
 
-  function renderItem ({ item }) {
+  function renderItem({ item }) {
     return (
-      <TouchableHighlight onPress={() => {navigation.navigate('NewsHeadlines', { category: item.category })}}>
-        <ImageBackground source={{ uri: imageBaseUrl + item.imageId + imageParameters }}
-          style={{
-            width: tileWidth,
-            height: tileWidth,
-            justifyContent: 'center'
-          }}>
-          <Text style={{
-            textAlign: 'center',
-            color: '#fff',
-            fontSize: 15
-          }}>{item.category}</Text>
-        </ImageBackground>
+      <TouchableHighlight onPress={() => { navigation.navigate('NewsHeadlines', { category: item.category }) }}>
+        <View style={styles.Card}>
+          <ImageBackground source={{ uri: imageBaseUrl + item.imageId + imageParameters }}
+            style={styles.imageContainer}
+            imageStyle={styles.imageStyle}>
+          </ImageBackground>
+          <View style={styles.textContainer}>
+            <Text style={styles.categoryText}>{item.category}</Text>
+          </View>
+        </View>
       </TouchableHighlight>
     );
   }
@@ -54,6 +56,41 @@ const NewsCategory = ({ navigation }) => {
   );
 };
 
+const styles = StyleSheet.create({
+  Card: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    flex: 1,
+    width: wp('45%'),
+    height: hp('25%') + hp('4%'),
+    flexDirection: 'column',
+    left: hp('1.5%'),
+    marginRight: hp('2%'),
+    marginBottom: hp('3%'),
+    elevation: 4,
+  },
+  categoryText: {
+    textAlign: 'center',
+    color: '#fff',
+    fontSize: hp('2.5%'),
+    fontFamily: 'Comfortaa-VariableFont_wght'
+  },
+  imageContainer: {
+    borderColor: 'black',
+    width: wp('45%'),
+    height: hp('25%'),
+    position: 'absolute',
+  }, 
+  imageStyle: { 
+    borderBottomLeftRadius: 35, 
+    borderBottomRightRadius: 35, 
+  },
+  textContainer: { 
+    flex: 1, 
+    alignItems: 'stretch', 
+    justifyContent: 'flex-end' 
+  }
+});
+
 NewsCategory.navigationOptions = ({ navigation }) => ({
   title: 'Haber Kategorileri',
   headerStyle: {
@@ -64,7 +101,7 @@ NewsCategory.navigationOptions = ({ navigation }) => ({
     fontFamily: Platform.OS === 'ios' ? 'Futura' : 'Roboto',
   },
 });
- 
+
 StatusBar.setBarStyle('light-content', true);
 
 export default withNavigation(NewsCategory);

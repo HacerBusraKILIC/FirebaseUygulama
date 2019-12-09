@@ -62,15 +62,11 @@ const styles = StyleSheet.create({
   ImageStyle: {
     width: wp('100%'),
     height: hp('35%'),
-    /*borderBottomLeftRadius: 38,
-    borderBottomRightRadius: 38,*/
   },
   gradientImage: {
     backgroundColor: 'transparent',
     width: wp('100%'),
     height: hp('35%'),
-    /*borderBottomLeftRadius: 38,
-    borderBottomRightRadius: 38,*/
   },
   baseText: {
     fontFamily: 'Comfortaa-VariableFont_wght',
@@ -116,21 +112,17 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   webViewButton: {
-    backgroundColor: 'lightgray',
-    height: hp('5%'),
-    //top: wp('1%'),
-    left: wp('0.5%'),
-    width: wp('99%'),
-    bottom:hp('0.2%'),
-
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    height: hp('6%'),
+    bottom:hp('0.01%'),
     alignItems: 'center',
-    borderColor: 'black',
-    borderRadius: 5,
+    //borderRadius: 5,
     padding: 10
   },
   webViewButtonText: {
     fontFamily: 'Comfortaa-VariableFont_wght',
-    color: 'gray',
+    alignItems: 'center',
+    color: '#fff',
     fontSize: hp('2.5%'),
 }
 })
